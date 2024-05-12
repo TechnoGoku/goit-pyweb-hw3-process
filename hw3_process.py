@@ -1,6 +1,19 @@
-from multiprocessing import Pool, current_process, cpu_count
-
+import multiprocessing
+import time
+   
 
 def factorize(*number):
-    # YOUR CODE HERE
-    raise NotImplementedError() # Remove after implementation
+    result = []
+    for num in number:
+        factors = []
+        for i in range(1, num + 1):
+            if num % i == 0:
+                factors.append(i)
+        result.append(factors)
+    return result
+
+def test_factorize():
+    
+            
+
+    
